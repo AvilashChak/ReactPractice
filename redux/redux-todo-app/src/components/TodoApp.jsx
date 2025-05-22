@@ -10,7 +10,7 @@ const TodoApp = () => {
   const [editText, setEditText] = useState('')
 
   const handleAdd = () => {
-    if (input.trim === '') return;
+    if (input.trim() === '') return;
     dispatch(addTodo(input));
     setInput('');
   };
